@@ -1,16 +1,23 @@
 
-let massMark = 78;
-let heightMark = 1.69;
-let massJohn = 92;
-let heightJohn = 1.95;
 
-console.log("Mark:" + massMark / (heightMark ** 2));
-console.log("John:" + massJohn / (heightJohn ** 2));
 
-massMark = 95;
-heightMark = 1.88;
-massJohn = 85;
-heightJohn = 1.76;
+const firstName = 'Jonas';
+const job = 'teacher';
+const birthYear = 1991;
+const year = 2037;
 
-console.log("Mark:" + massMark / (heightMark ** 2));
-console.log("John:" + massJohn / (heightJohn ** 2));
+const jonas = "I'm'" + firstName + ', a ' + (year - birthYear) + " years old" ;
+console.log(jonas);
+
+
+const jonasNew = `I'm ${firstName},a ${year-birthYear} yeard old ${job}!`;
+console.log(jonasNew);
+
+
+console.log(`Just a regular string... `);
+
+console.log(`
+wda
+wadaw
+wddaw
+awdaw`);
