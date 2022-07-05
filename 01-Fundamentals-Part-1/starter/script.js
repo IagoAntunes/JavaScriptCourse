@@ -1,20 +1,27 @@
+let massMark = 78;
+let heightMark = 1.69;
+let massJohn = 92;
+let heightJohn = 1.95;
 
+let bmiMark =  massMark / (heightMark ** 2);
+let bmiJohn = massJohn / (heightJohn ** 2)
 
-
-const age = 15;
-
-if(age >= 18){
-    console.log('Sarah can start driving license ');
+if(bmiMark > bmiJohn){
+    console.log(`Mark's BMI${bmiMark} is higher than John${bmiJohn}'s`)
 }else{
-    const yearsLeft = 18 - age;
-    console.log(`Sarah is too young. Wait another ${yearsLeft} years`);
+    console.log(`John's BMI${bmiJohn} is higher than Mark's${bmiMark}!"`);
 }
 
-const birthYear = 1991;
-let century;
-if(birthYear <= 2000){
-    century = 20;
+massMark = 95;
+heightMark = 1.88;
+massJohn = 85;
+heightJohn = 1.76;
+
+bmiMark =  massMark / (heightMark ** 2);
+bmiJohn = massJohn / (heightJohn ** 2)
+
+if(bmiMark > bmiJohn){
+    console.log(`Mark's BMI${bmiMark} is higher than John${bmiJohn}'s`)
 }else{
-    century = 21;
+    console.log(`John's BMI${bmiJohn} is higher than Mark's${bmiMark}!"`);
 }
-console.log(century);
