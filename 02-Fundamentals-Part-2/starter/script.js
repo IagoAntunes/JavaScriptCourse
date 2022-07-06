@@ -1,20 +1,17 @@
 
 
-function logger(){
-    console.log("My name is Jonas");
+
+
+function calcAge1(birthYeah){
+    return 2037 - birthYeah;
 }
 
-logger();
-logger();
-logger();
+const age1 = calcAge1(1991);
+console.log(age1);
 
-function fruitProcessor(apples,oranges){
-    console.log(apples,oranges);
-    const juice = `Juice with ${apples} apples and ${oranges} oranges`;
-    return juice;
+const calcAge2 = function(birthYeah){
+    return 2037 - birthYeah;
 }
 
-console.log(fruitProcessor(5));
-
-const appleOrangeJuice = fruitProcessor(2,4);
-console.log(appleOrangeJuice);
+const age2 = calcAge2(1991);
+console.log(age1,age2);
