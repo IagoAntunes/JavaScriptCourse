@@ -1,27 +1,20 @@
-let massMark = 78;
-let heightMark = 1.69;
-let massJohn = 92;
-let heightJohn = 1.95;
+//Type Conversion
+const inputYear = '1991';
+console.log(Number(inputYear),inputYear);
+console.log(Number(inputYear) + 18);
 
-let bmiMark =  massMark / (heightMark ** 2);
-let bmiJohn = massJohn / (heightJohn ** 2)
+console.log(Number('Jonas'));
+console.log(typeof NaN);
 
-if(bmiMark > bmiJohn){
-    console.log(`Mark's BMI${bmiMark} is higher than John${bmiJohn}'s`)
-}else{
-    console.log(`John's BMI${bmiJohn} is higher than Mark's${bmiMark}!"`);
-}
+console.log(String(23 + 5),56);
 
-massMark = 95;
-heightMark = 1.88;
-massJohn = 85;
-heightJohn = 1.76;
+//Type Coercion
+console.log("I am " + 23 + "years old");
+console.log("23" + "10" - 3);
+console.log("23" / "10");
 
-bmiMark =  massMark / (heightMark ** 2);
-bmiJohn = massJohn / (heightJohn ** 2)
 
-if(bmiMark > bmiJohn){
-    console.log(`Mark's BMI${bmiMark} is higher than John${bmiJohn}'s`)
-}else{
-    console.log(`John's BMI${bmiJohn} is higher than Mark's${bmiMark}!"`);
-}
+let n = "1" + 1;
+n = n - 1;
+console.log(n);
+
