@@ -2,16 +2,17 @@
 
 
 
-function calcAge1(birthYeah){
-    return 2037 - birthYeah;
+
+
+const yearsUntilRetirement = (birthYeah,firstName) =>{
+    const age = 2037 - birthYeah;
+    const retirement = 65 - age;
+    return `${firstName} retires in ${retirement} years`;
 }
 
-const age1 = calcAge1(1991);
-console.log(age1);
+console.log(yearsUntilRetirement(1991,"Joao"));
+console.log(yearsUntilRetirement(2022,"Bob",56));
 
-const calcAge2 = function(birthYeah){
-    return 2037 - birthYeah;
-}
+const t1 = teste => 20 - 16;
 
-const age2 = calcAge2(1991);
-console.log(age1,age2);
+console.log(t1());
